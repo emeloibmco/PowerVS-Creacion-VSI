@@ -89,22 +89,39 @@ Para esto tenga en cuenta los siguientes pasos:
 
 ## Resizing de la instancia
 
+Acceder a la instancia de PowerVS que desea editar y seleccionar la opción de edit details, para cambiar características de la VSI, tales como número de cores o almacenamiento, no es necesario apagar la máquina, solamente se debe ingresar a la instancia y seleccionar el botón ```Edit details```, modificar las características deseadas y dar clic en ```Save Edits and order```
+
 <img width="800" alt="autoscale" src=https://github.com/emeloibmco/PowerVS-Creacion-VSI/blob/main/Images/edit-server-details.png>
+
+Luego de realizar esto aparecerá un anuncio de edición exitosa e iniciará automaticamente la actualización de la VSI.
 
 <img width="800" alt="autoscale" src=https://github.com/emeloibmco/PowerVS-Creacion-VSI/blob/main/Images/server-edit-succesful.png>
 
 ## Creación del cloud connection
+Seleccione la opción de cloud connection en el banner de la izquierda donde podrá configurar resources details,virtual connections y subnets.Ademas En resource details no es necesario activar el global routing.
 
 <img width="800" alt="autoscale" src=https://github.com/emeloibmco/PowerVS-Creacion-VSI/blob/main/Images/1-resource-details.png>
+
+En la sección de virtual connections es posible establecer una conexión con infraestructura clásica sin la necesidad de utilizar un tunel GRE.
+
 <img width="800" alt="autoscale" src=https://github.com/emeloibmco/PowerVS-Creacion-VSI/blob/main/Images/2-virtual-connections.png>
+
+La subnet debe pertenecer a la misma región y pod que la VSI.
+
 <img width="800" alt="autoscale" src=https://github.com/emeloibmco/PowerVS-Creacion-VSI/blob/main/Images/3-subnets.png>
 
 ## Acceder al Sistema operativo por consola
+
+Debe acceder a las instancias virtuales en el banner de la izquierda y seleccionar la instacia en la cual desea abrir la consola. Luego en el menú de 3 puntos a la derecha seleccionar la opción de ```Open console```
 
 <p align="center">
 <img width="800" alt="autoscale" src=https://github.com/emeloibmco/PowerVS-Creacion-VSI/blob/main/Images/open-console.png >
 </p>
 <br />
+
+Luego se abrirá una nueva pestaña en el navegador que tendrá acceso al sistema operativo de la VSI y podrá interactuar con el servidor.
+
+Ademas si es la primera vez que inicia la consola debera proporcionar credenciales de usuario y contraseña para poner conectarse posteriormente.
 
 <p align="center">
 <img width="800" alt="autoscale" src=https://github.com/emeloibmco/PowerVS-Creacion-VSI/blob/main/Images/consola.png>
